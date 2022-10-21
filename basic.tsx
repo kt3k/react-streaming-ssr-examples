@@ -1,6 +1,6 @@
-const http = require("http");
-const React = require("react");
-const ReactDOMServer = require("react-dom/server");
+import http from "http";
+import React from "react";
+import ReactDOMServer from "react-dom/server";
 
 const server = http.createServer((req, res) => {
   const str = ReactDOMServer.renderToString(<h1>hello SSR!</h1>);
